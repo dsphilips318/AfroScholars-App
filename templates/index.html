@@ -16,11 +16,13 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-		<img src='https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg' alt="LOGO Placeholder" style="height: 100px; width: 125px;">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
+		<div class="col">
+            <img src='/static/images/AfroScholars-logo.png' alt="AfroScholars" style="height: 100px; width: 125px;">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <p class="justify-content-center" style="text: center; color: white; font-size: 20px;"><b>AfroScholars</b></p>
+        </div>
 		<div class="collapse navbar-collapse navbar-dark bg-success" style='justify-content: space-evenly;' id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto" style="font-size: 175%; width: 100%; justify-content: space-evenly;">
 				<li class="nav-item active">
@@ -45,21 +47,25 @@
 			</ul>
 		</div>
 	</nav>
-    <div class='container'> 
+    <!-- <div class='container'> 
         <p> </p>
-    </div>
+    </div> -->
     <!-- Welcome to ... -->
-    <div class='container-fluid' style="background-image: url('static/images/political_map.jpg'); background-size: cover; background-attachment: fixed; width: 100%; height: 500px">
+    <div class='container-fluid' style="background-image: url('static/images/political_map.jpg'); background-size: cover; background-attachment: fixed; width: 100%; height: 600px">
         <div class="jumbotron jumbotron-fluid bg-transparent vertical-align: middle;" >
             <div class="container-lg-12 text-center" style="padding: 100px 0;">
-                <h1 class="display-4" style='color: green; '>Welcome to Company</h1>
-                <p class="lead" style='color: green;'> <b> Welcome to (Name). (Name) is a West African Language Learning app. At (Name) we encourage the embracement of West African culture through learning languages that are indigenous to West African countries. </b> </p>
+                <h1 style='color: black; font-size: 3.5rem;'>Welcome to Company</h1>
+                <p class='lead' style='color: black; font-size: 150%;'> <b> Welcome to (Name). (Name) is a West African Language Learning app. At (Name) we encourage the embracement of West African culture through learning languages that are indigenous to West African countries. </b> </p>
             </div>
         </div>
     </div>
+    <div class='container'>
+        <p>
+        </p>
+    </div>
     <!-- Mission Statement -->
     <div class='container-fluid'>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style='background-color: #ff8985;'>
             <div class="container-lg-12 text-center">
                 <h1 class="display-4">Why Do We Do This?</h1>
                 <p class="lead">A lot of African languages are spoken only. Most of those languages's text have been destroyed. Because of this there is a lack of representation of African languages on language learning apps. At (Name) we want to help change that by providing language learning lessons that are mainly taught using speech.</p>
@@ -68,21 +74,20 @@
     </div>
     <!-- Learn Now -->
     <div class='container-fluid'>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style='background-color: #f7ed60;'>
             <div class="container-lg-12 text-center">
                 <h1 class="display-4">Learn Now</h1>
                 <p class="lead">Click on <b>Languages</b> to see a full list of the languages that we will be adding to our platform soon. Click on <b>Try Yoruba Demo</b> to try some mini-lessons in a popular West African language called Yoruba. You can also access both of these pages through the menu bar.</p>
                 <a class="btn btn-success btn-lg" href="/languages" role="button">Languages</a>
-                <a class="btn btn-success btn-lg" href="#" role="button">Try Yoruba Demo</a>
+                <a class="btn btn-success btn-lg" href="/yoruba-demo" role="button">Try Yoruba Demo</a>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="container-fluid" style="background-color: #00ad00;">
-        <div class="jumbotron jumbotron-fluid bg-transparent">
-            <div class="container-lg-12 px-0">
-                <div class="row">
+        <div class="container-lg-12 px-0">
+            <div class="row" style="padding: 35px 0">
                 <div class="col-md-6">
                     <img src='https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg' alt="LOGO Placeholder" style="height: 150; width: 225px;">
                     <p>1234 Hedgeman Avenue <br>Brooklyn, NY 00000 <br>(202)555-0165 </p>
@@ -90,22 +95,21 @@
                 <div class="col-md-6">
                     <ul class="nav justify-content-end text-light">
                         <li class="nav-item">
-                            <a class="nav-link" href="/index">Home</a>
+                            <a class="nav-link border-right" style="color: black;" href="/index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/languages">Languages</a>
+                            <a class="nav-link border-right border-left" style="color: black;" href="/languages">Languages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Yoruba Demo</a>
+                            <a class="nav-link border-right border-left" style="color: black;" href="/yoruba-demo">Yoruba Demo</a>
                         </li>
-                        <li class="nav-item nav-pills">
-                            <a href="#" class="nav-link">Sign Up</a>
+                        <li class="nav-item">
+                            <a href="/sign-up" style="color: black;" class="nav-link border-right border-left">Sign Up</a>
                         </li>
-                        <li class="nav-item nav-pills">
-                            <a href="#" class="nav-link">Log In</a>
+                        <li class="nav-item">
+                            <a href="/log-in" style="color: black;" class="nav-link border-left">Log In</a>
                         </li>
                     </ul>
-                </div>
                 </div>
             </div>
         </div>

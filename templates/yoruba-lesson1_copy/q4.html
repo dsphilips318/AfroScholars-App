@@ -1,0 +1,139 @@
+<html>
+
+<head>
+	<title>Company Name | Yoruba - Lesson 1: Question 4</title>
+    <style>
+        body {
+            background-color: #dbdbdb;
+        }
+    </style>
+</head>
+
+<body>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- styles.css -->
+	<link href="/static/css/style.css" rel="stylesheet">
+
+    <div class='container'> 
+        <p> </p>
+    </div>
+    <!-- Welcome to ... -->
+    <div class='container'>
+        <div class='row-lg-12 justify-content-center' style="padding: 30px 0;">
+            <h3 class="text-center">Question 4: What is the Yoruba word for 'four'?</h3>
+        </div>
+    </div>
+    <div class='container' style='width: 100%; height: 300px'>
+        <div class='row justify-content-center' style="padding: 20px 0; column-gap: 40px;">
+           <div class='col-md-3 mb-2 justify-content-center'>
+               <div class='row justify-content-center'> 
+                    <img style='height: 200; width:150; margin-right: 15px'src='https://www.clipartmax.com/png/small/2-25447_75-images-of-number-4-clip-art-you-can-use-these-free.png'>
+               </div>
+           </div>
+           <div class='col-md-3 mb-2'>
+               <div class='row justify-content-center' style='padding-top: top 20px 0'>
+                   <input name="answer_4" type="radio" id="Aarun_answer" value='Aarun'>
+                   <label for="Aarun_answer"> Aarun </label>
+               </div>
+               <div class='row justify-content-center' style='padding: 33px 0;'>
+                   <input name="answer_4" type="radio" id="Eeji_answer" value='Eeji'>
+                   <label for="Eeji_answer"> Eeji </label>
+               </div>
+               <div class='row justify-content-center'>
+                   <input name="answer_4" type="radio" id="Eerin_answer" value='Eerin'>
+                   <label for="Eerin_answer"> Eerin </label>
+               </div>
+           </div>
+           <div class='col-md-1 mb-2'>
+               <div class='row justify-content-center' style='padding-top: top 10px 0'>
+                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play5()" class='btn btn-light rounded-circle'>
+                   <audio id="audio5" src="/static/audio/yoruba-mom-five.m4a"></audio>
+               </div>
+               <div class='row justify-content-center' style='padding: 15px 0'>
+                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play2()" class='btn btn-light rounded-circle'>
+                   <audio id="audio2" src="/static/audio/yoruba-dad-two.m4a"></audio>
+               </div>
+               <div class='row justify-content-center' style='padding-top: top 20px 0'>
+                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play4()" class='btn btn-light rounded-circle'>
+                   <audio id="audio4" src="/static/audio/yoruba-dad-four.m4a"></audio>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class='container' style='width: 100%; height: 100px;'>
+        <div class='row justify-content-end border-top border-dark' style='width: 100%; height: 100px; padding: 20px 0;'>
+            <a href="/yoruba/lesson1/question5" class="btn btn-success btn-lg active" style='height: 45px;' role="button" aria-pressed="true" >Submit</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color: #00ad00;">
+        <div class="jumbotron jumbotron-fluid bg-transparent">
+            <div class="container-lg-12 px-0">
+                <div class="row">
+                <div class="col-md-6">
+                    <img src='https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg' alt="LOGO Placeholder" style="height: 150; width: 225px;">
+                    <p>1234 Hedgeman Avenue <br>Brooklyn, NY 00000 <br>(202)555-0165 </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-end text-light">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black;" href="/index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: black;" href="/languages">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"style="color: black;" href="/yoruba-demo">Yoruba Demo</a>
+                        </li>
+                        <li class="nav-item nav-pills">
+                            <a href="/sign-up" style="color: black;" class="nav-link">Sign Up</a>
+                        </li>
+                        <li class="nav-item nav-pills">
+                            <a href="/log-in" style="color: black;" class="nav-link">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+    <script>
+        function clickButton() {
+            document.getElementById("greenClick").style.backgroundColor = "green";
+        }
+    </script>
+    <script>
+      function play5() {
+        var audio = document.getElementById("audio5");
+        audio.play();
+      }
+      function play2() {
+        var audio = document.getElementById("audio2");
+        audio.play();
+      }
+      function play4() {
+        var audio = document.getElementById("audio4");
+        audio.play();
+      }
+    </script>
+</body>
+
+</html>
