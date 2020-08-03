@@ -2,6 +2,44 @@
 
 <head>
 	<title>AfroScholars | Home</title>
+    <style>
+        .map {
+            position: relative; 
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map::before {    
+            content: "";
+            background-image: url('/static/images/political_map.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.75;
+            height: 600px;
+            width: 100%
+        }
+
+        h1 {
+        position: relative;
+        color: #000000;  
+        font-size: 14rem;
+        line-height: 0.9;
+        text-align: center;
+        }
+
+        p {
+           position: relative;
+            color: #000000;   
+        }
+    </style>
 </head>
 
 <body>
@@ -51,9 +89,9 @@
         <p> </p>
     </div> -->
     <!-- Welcome to ... -->
-    <div class='container-fluid' style="background-image: url('static/images/political_map.jpg'); background-size: cover; background-attachment: fixed; width: 100%; height: 600px">
-        <div class="jumbotron jumbotron-fluid bg-transparent vertical-align: middle;" >
-            <div class="container-lg-12 text-center" style="padding: 100px 0;">
+    <div class='container-fluid map'>
+        <div class="jumbotron jumbotron-fluid vertical-align: middle;" >
+            <div class="container-lg-12 text-center" style="padding: 100px 0; ">
                 <h1 style='color: black; font-size: 3.5rem;'>Welcome to AfroScholars</h1>
                 <p class='lead' style='color: black; font-weight: 500; font-size: 150%;'> AfroScholars is a West African Language Learning app. At AfroScholars we encourage the embracement of West African culture through learning languages that are indigenous to West African countries.</p>
             </div>
