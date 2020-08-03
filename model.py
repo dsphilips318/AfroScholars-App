@@ -52,5 +52,3 @@ def feedback(props):
         feedback_message.update({'message': f'Unfortunately, you scored a {percent}. Don\'t worry. Practice this lesson again and again and you can get an even better score.'})
     return feedback_message
 
-
-print(feedback(props_test))

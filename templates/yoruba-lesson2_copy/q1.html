@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Company Name | Yoruba - Lesson 1: Question 2</title>
+	<title>Company Name | Yoruba - Lesson 2: Question 1</title>
     <style>
         body {
             background-color: #dbdbdb;
@@ -23,61 +23,66 @@
         <p> </p>
     </div>
     <!-- Welcome to ... -->
-    <div class='container-fluid'>
-        <div class="container-lg-12 text-center">
-            <h1 class="display-4">Question 2</h1>
+    <div class='jumboMapImage'>
+        <div class='container-fluid'>
+            <div class="container-lg-12 text-center">
+                <h1 class="display-4">Question 1</h1>
+            </div>
         </div>
     </div>
     <div class='container'>
         <div class='row-lg-12'>
             <div class="progress" style="height: 20px;">
-                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
             </div>
         </div>
 	</div>
     <div class='container'>
         <div class='row-lg-12 justify-content-center' style="padding: 30px 0;">
-            <h3 class="text-center">What is the Yoruba word for 'two'?</h3>
+            <h3 class="text-center">What is the Yoruba word for 'six'?</h3>
         </div>
     </div>
     <div class='container' style='width: 100%; height: 500px'>
         <div class='row justify-content-center' style="padding: 20px 0; column-gap: 40px;">
            <div class='col-md-3 mb-2 justify-content-center'>
                <div class='row justify-content-center'> 
-                    <img style='height: 200; width:150; margin-right: 15px'src='https://c7.uihere.com/files/663/99/614/polka-dot-clip-art-birthday-cliparts-number-2.jpg'>
+                    <img style='height: 200; width:150; margin-right: 15px'src='https://www.pngfind.com/pngs/m/98-983768_numbers-png-number-6-clipart-png-transparent-png.png'>
                </div>
            </div>
            <div class='col-md-3 mb-2'>
-               <div class='row justify-content-center' style='padding-top: top 20px 0'>
-                   <input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eeji'>
-               </div>
-               <div class='row justify-content-center' style='padding: 33px 0;'>
-                   <input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eeta'>
-               </div>
-               <div class='row justify-content-center'>
-                   <input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eeje'>
-               </div>
+		        <form>
+				    <div class='row justify-content-center' style='padding-top: top 20px 0'>
+					    <input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eefa'>
+			        </div>
+					<div class='row justify-content-center' style='padding: 33px 0;'>
+						<input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eewa'>
+			        </div>
+					<div class='row justify-content-center'>
+						<input type="button" onclick='clickButton'class="btn bt-lg border border-success btn-block btn-transparent" value='Eeta'>
+			        </div>
+               </form>
            </div>
            <div class='col-md-1 mb-2'>
                <div class='row justify-content-center' style='padding-top: top 10px 0'>
-                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play2()" class='btn btn-light rounded-circle'>
-                   <audio id="audio2" src="/static/audio/yoruba-dad-two.m4a"></audio>
+                    <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play6()" class='btn btn-light rounded-circle'>
+                    <audio id="audio6" src="/static/audio/yoruba-dad-six.m4a"></audio>
                </div>
                <div class='row justify-content-center' style='padding: 15px 0'>
+                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play10()" class='btn btn-light rounded-circle'>
+                   <audio id="audio10" src="/static/audio/yoruba-dad-ten.m4a"></audio>
+               </div>
+               <div class='row justify-content-center' style='padding-top: top 20px 0'>
                    <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play3()" class='btn btn-light rounded-circle'>
                    <audio id="audio3" src="/static/audio/yoruba-mom-three.m4a"></audio>
                </div>
-               <div class='row justify-content-center' style='padding-top: top 20px 0'>
-                   <img src='/static/images/sound-icon.png' style='height: 50px; width: 60px; border-radius=50px;' type='button' onclick="play7()" class='btn btn-light rounded-circle'>
-                   <audio id="audio7" src="/static/audio/yoruba-mom-seven.m4a"></audio>
-               </div>
            </div>
+            
         </div>
     </div>
-
+    <!-- Submit Button -->
     <div class='container' style='width: 100%; height: 100px;'>
         <div class='row justify-content-end border-top border-dark' style='width: 100%; height: 100px; padding: 20px 0;'>
-            <a href="/yoruba/lesson1/question3" class="btn btn-success btn-lg active" style='height: 45px;' role="button" aria-pressed="true" >Submit</a>
+            <a href="/yoruba/lesson2/question2" class="btn btn-success btn-lg active" style='height: 45px;' role="button" aria-pressed="true" >Submit</a>
         </div>
     </div>
     <!-- Footer -->
@@ -126,20 +131,20 @@
 	</script>
     <script>
         function clickButton() {
-            document.getElementById("greenClick").style.backgroundColor = "green";
+            document.getElementById("myDIV").style.backgroundColor = "green";
         }
     </script>
     <script>
-      function play2() {
-        var audio = document.getElementById("audio2");
+      function play6() {
+        var audio = document.getElementById("audio6");
+        audio.play();
+      }
+      function play10() {
+        var audio = document.getElementById("audio10");
         audio.play();
       }
       function play3() {
         var audio = document.getElementById("audio3");
-        audio.play();
-      }
-      function play7() {
-        var audio = document.getElementById("audio7");
         audio.play();
       }
     </script>

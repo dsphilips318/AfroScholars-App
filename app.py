@@ -90,6 +90,8 @@ def lesson1_question10():
 
 @app.route('/yoruba/lesson1/results', methods=['GET', 'POST'])
 def lesson1_results():
+    if request.method == 'GET':
+        return "You are getting the results page"
     if request.method == 'POST':
         answer1 = request.form['answer_1']
         answer2 = request.form['answer_2']
@@ -116,14 +118,18 @@ def lesson1_results():
         results = feedback(responses)
         percentage = results.get('percentage')
         message = results.get('message')
-    return render_template('yoruba-lesson1_copy/results.html', percentage=percentage, message=message)
+        props = {
+            'percentage': percentage,
+            'message': message
+        }
+        return render_template('yoruba-lesson1_copy/results.html', props=props)
 
 # Lesson 2
 
 
-@app.route('/yoruba/lesson2/question1')
+@app.route('/yoruba/lesson2/questions')
 def lesson2_question1():
-    return render_template('yoruba-lesson2/q1.html')
+    return render_template('yoruba-lesson2_copy/questions.html')
 
 
 @app.route('/yoruba/lesson2/question2')

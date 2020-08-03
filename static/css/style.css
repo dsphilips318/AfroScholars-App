@@ -1,5 +1,3 @@
-.jumboMapImage{
-    background-image: url('static/images/political_map.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+.eye{
+    position: absolute
 }
